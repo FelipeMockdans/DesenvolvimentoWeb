@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    line-height: 1.7;
+    background: linear-gradient(180deg, #dbeafe 0%, #bfdbfe 45%, #eff6ff 100%);
+    color: #1f2937;
+}
+
+header {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+main {
+    padding: 40px 20px 20px;
+}
+
+article {
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+    border: 1px solid #dbeafe;
+}
+
+article h2 {
+    font-size: 2rem;
+    color: #1d4ed8;
+    margin-bottom: 10px;
+}
+
+time {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #6b7280;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+article p {
+    margin-bottom: 18px;
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+figure {
+    margin-top: 25px;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.14);
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #4b5563;
+}
+
+aside {
+    max-width: 850px;
+    margin: 25px auto 0;
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border: 1px solid #dbeafe;
+}
+
+aside h3 {
+    color: #1e40af;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+aside ul {
+    padding-left: 20px;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+aside a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+aside a:hover {
+    color: #1e3a8a;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 35px;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 0.95rem;
+}
