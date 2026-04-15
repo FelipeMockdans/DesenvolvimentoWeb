@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Tarefas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="container">
+
+    <div class="todo-header">
+      <h1>Lista de Tarefas</h1>
+      <span class="todo-count" id="count"></span>
+    </div>
+
+    <div class="input-area">
+      <input
+        type="text"
+        id="taskInput"
+        class="task-input"
+        placeholder="Nova tarefa..."
+        maxlength="120"
+        aria-label="Nova tarefa"
+      />
+      <button id="addBtn" class="add-btn">Adicionar</button>
+    </div>
+
+    <ul id="taskList" class="task-list"></ul>
+
+    <div class="footer">
+      <span class="hint">Pressione Enter para adicionar.</span>
+      <button class="clear-btn" id="clearDone">Limpar concluídas</button>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
