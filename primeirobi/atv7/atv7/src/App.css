@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  line-height: 1.7;
+  color: #1f2937;
+  background: linear-gradient(180deg, #dbeafe 0%, #bfdbfe 45%, #eff6ff 100%);
+  min-height: 100vh;
+}
+
+.app {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+}
+
+/* Header */
+.topo {
+  grid-area: header;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  padding: 30px 20px 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.topo h1 {
+  font-size: 2.2rem;
+}
+
+/* Navigation */
+.navegacao {
+  grid-area: nav;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  padding: 0 20px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+  transform: translateY(-2px);
+}
+
+/* Main content grid */
+.conteudo-principal {
+  grid-area: main;
+  width: min(1200px, 92%);
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+/* Article */
+.post,
+.barra-lateral {
+  background-color: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.post h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 8px;
+}
+
+.meta-post {
+  color: #475569;
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+}
+
+.post p {
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+.post figure {
+  margin-top: 20px;
+}
+
+.post img {
+  width: 100%;
+  border-radius: 14px;
+  display: block;
+}
+
+.post figcaption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #475569;
+  text-align: center;
+}
+
+/* Sidebar */
+.barra-lateral h3 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.barra-lateral ul {
+  list-style: none;
+}
+
+.barra-lateral li {
+  margin-bottom: 12px;
+}
+
+.barra-lateral a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.barra-lateral a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.rodape {
+  grid-area: footer;
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .conteudo-principal {
+    grid-template-columns: 1fr;
+  }
+
+  .topo h1 {
+    font-size: 1.8rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .post h2 {
+    font-size: 1.6rem;
+  }
+
+  .post,
+  .barra-lateral {
+    padding: 18px;
+  }
+}
