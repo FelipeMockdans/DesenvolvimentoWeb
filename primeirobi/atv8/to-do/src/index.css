@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue:    #2563eb;
+  --blue-lt: #eff6ff;
+  --ink:     #0f172a;
+  --muted:   #94a3b8;
+  --border:  #e2e8f0;
+  --bg:      #ffffff;
+}
+
+html, body { height: 100%; }
+
+body {
+  font-family: 'Geist', sans-serif;
+  background: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 16px;
+}
+
+#root {
+  width: 100%;
+  max-width: 440px;
+}
